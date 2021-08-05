@@ -239,7 +239,6 @@ class CheckpointLoader:
         """
 
         checkpoint_loader = cls._get_checkpoint_loader(filename)
-        class_name = checkpoint_loader.__name__
         return checkpoint_loader(filename, map_location)
 
 
